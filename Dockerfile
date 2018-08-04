@@ -34,8 +34,10 @@ ADD conf/hive-exec-log4j2.properties $HIVE_HOME/conf
 ADD conf/hive-log4j2.properties $HIVE_HOME/conf
 ADD conf/ivysettings.xml $HIVE_HOME/conf
 ADD conf/llap-daemon-log4j2.properties $HIVE_HOME/conf
+ADD conf/jsonserde.jar $HIVE_HOME/conf
 
 COPY startup.sh /usr/local/bin/
+# COPY jsonserde.jar /usr/local/bin/
 RUN chmod +x /usr/local/bin/startup.sh
 
 COPY entrypoint.sh /usr/local/bin/
