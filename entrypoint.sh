@@ -75,7 +75,7 @@ if [ -n "$GANGLIA_HOST" ]; then
         echo "$module.sink.ganglia.period=10"
         echo "$module.sink.ganglia.supportsparse=true"
         echo "$module.sink.ganglia.slope=jvm.metrics.gcCount=zero,jvm.metrics.memHeapUsedM=both"
-        echo "$module.sink.ganglia.dmax=jvm.metrics.threadsBlocked=70,jvm.metrics.memHeapUsedM=40"
+        echo "$module.sink.ganglia.dmax=jvm.metrics.threadsBlocked=170,jvm.metrics.memHeapUsedM=40"
         echo "$module.sink.ganglia.servers=$GANGLIA_HOST:8649"
     done > /etc/hadoop/hadoop-metrics2.properties
 fi
