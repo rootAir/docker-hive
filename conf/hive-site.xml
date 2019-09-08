@@ -18,5 +18,5 @@
 
 <configuration>
     <name>hive.metastore.uris</name>
-    <value>thrift://localhost:9083</value>
+    <value>thrift://192.168.15.17:9083</value>
 </configuration>
